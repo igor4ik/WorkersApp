@@ -1,0 +1,82 @@
+﻿<Window x:Class="WorkerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525"
+        xmlns:src="clr-namespace:WorkerApp"
+        xmlns:validators="clr-namespace:WorkerApp">
+    <Window.Resources>
+        <src:Worker x:Key="data"/>
+        <Style x:Key="textBoxInError" TargetType="TextBox">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="true">
+                    <Setter Property="ToolTip"
+                            Value="{Binding RelativeSource={x:Static RelativeSource.Self},
+                        Path=(Validation.Errors)[0].ErrorContent}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <TextBox 
+            x:Name="txtAddName" 
+            HorizontalAlignment="Left" 
+            Height="23" Margin="100,24,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="120" 
+            RenderTransformOrigin="0.475,0.247">
+        <TextBox.Text>
+                <Binding 
+                    Path="Name" 
+                    Source="{StaticResource data}"
+                    ValidatesOnDataErrors="True"
+                    UpdateSourceTrigger="PropertyChanged"
+                    Mode="TwoWay">
+                <Binding.ValidationRules>
+                    <validators:MyValidationRules/>
+                </Binding.ValidationRules>
+            </Binding>
+        </TextBox.Text>
+        </TextBox>
+        <Label 
+            Name="l1" 
+            FontSize="12" 
+            Content="{Binding ElementName=txtAddName, Path=(Validation.Errors)[0].ErrorContent}" 
+            Foreground="Red" 
+            Margin="100,47,185,233"/>
+        <TextBox 
+            x:Name="txtRemoveName" 
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="100,107,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="120">
+        <TextBox.Text>
+            <Binding 
+                Path="Remove" 
+                Source="{StaticResource data}"
+                ValidatesOnDataErrors="True"
+                UpdateSourceTrigger="PropertyChanged"
+                Mode="TwoWay">
+                <Binding.ValidationRules>
+                    <validators:MyValidationRules/>
+                </Binding.ValidationRules>
+            </Binding>
+        </TextBox.Text>
+        </TextBox>
+        <Label 
+            Name="l2" 
+            FontSize="12" 
+            Content="{Binding ElementName=txtRemoveName, Path=(Validation.Errors)[0].ErrorContent}" 
+            Foreground="Red" 
+            Margin="100,130,185,150"/>
+        <Button x:Name="btnAddName" Content="Add Worker" HorizontalAlignment="Left" Margin="225,24,0,0" VerticalAlignment="Top" Width="75" Click="Button_Add_Worker"/>
+        <Button x:Name="btnRemoveName" Content="Remove Worker" HorizontalAlignment="Left" Margin="225,108,0,0" VerticalAlignment="Top" Width="75" Click="Button_Remove_Worker"/>
+        <Button x:Name="btnRemoveAll" Content="Remove All" HorizontalAlignment="Left" Margin="337,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Remove_All"/>
+        <ListBox x:Name="lvWorkers" HorizontalAlignment="Left" Height="220" Margin="337,10,0,0" VerticalAlignment="Top" Width="170" DisplayMemberPath="Name"/>
+        <Label Content="Add Worker" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top"/>
+        <Label Content="Remove Worker" HorizontalAlignment="Left" Margin="0,104,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

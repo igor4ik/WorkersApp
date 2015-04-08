@@ -1,0 +1,15 @@
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\bin\Debug\WorkerApp.exe.config
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\bin\Debug\WorkerApp.exe
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\bin\Debug\WorkerApp.pdb
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp.csprojResolveAssemblyReference.cache
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\MainWindow.baml
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\MainWindow.g.cs
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\App.g.cs
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp_MarkupCompile.cache
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp.g.resources
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp.Properties.Resources.resources
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp.csproj.GenerateResource.Cache
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp.exe
+c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp.pdb
+C:\Users\igor4ik2\Documents\Visual Studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\igor4ik2\Documents\Visual Studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp_MarkupCompile.lref
