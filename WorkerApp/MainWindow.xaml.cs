@@ -58,6 +58,10 @@ namespace WorkerApp
                     }
                 }
             }
+            else if ((txtRemoveName.Text).Equals(""))
+            {
+                MessageBox.Show("Worker not exist !", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             else//error message if list is empty
             {
                 MessageBox.Show("Worker list is empty !", "Error", MessageBoxButton.OK, MessageBoxImage.Error);

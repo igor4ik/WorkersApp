@@ -3,7 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525"
         xmlns:src="clr-namespace:WorkerApp"
-        xmlns:validators="clr-namespace:WorkerApp">
+        xmlns:validators="clr-namespace:WorkerApp"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <src:Worker x:Key="data"/>
         <Style x:Key="textBoxInError" TargetType="TextBox">
@@ -53,8 +55,8 @@
             VerticalAlignment="Top" 
             Width="120">
         <TextBox.Text>
-            <Binding 
-                Path="Remove" 
+            <Binding               
+                Path="Remove"         
                 Source="{StaticResource data}"
                 ValidatesOnDataErrors="True"
                 UpdateSourceTrigger="PropertyChanged"
@@ -63,7 +65,7 @@
                     <validators:MyValidationRules/>
                 </Binding.ValidationRules>
             </Binding>
-        </TextBox.Text>
+            </TextBox.Text>
         </TextBox>
         <Label 
             Name="l2" 
@@ -71,10 +73,10 @@
             Content="{Binding ElementName=txtRemoveName, Path=(Validation.Errors)[0].ErrorContent}" 
             Foreground="Red" 
             Margin="100,130,185,150"/>
-        <Button x:Name="btnAddName" Content="Add Worker" HorizontalAlignment="Left" Margin="225,24,0,0" VerticalAlignment="Top" Width="75" Click="Button_Add_Worker"/>
-        <Button x:Name="btnRemoveName" Content="Remove Worker" HorizontalAlignment="Left" Margin="225,108,0,0" VerticalAlignment="Top" Width="75" Click="Button_Remove_Worker"/>
+        <Button x:Name="btnAddName" Content="Add" HorizontalAlignment="Left" Margin="225,24,0,0" VerticalAlignment="Top" Width="75" Click="Button_Add_Worker"/>
+        <Button x:Name="btnRemoveName" Content="Remove" HorizontalAlignment="Left" Margin="225,108,0,0" VerticalAlignment="Top" Width="75" Click="Button_Remove_Worker"/>
         <Button x:Name="btnRemoveAll" Content="Remove All" HorizontalAlignment="Left" Margin="337,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Remove_All"/>
-        <ListBox x:Name="lvWorkers" HorizontalAlignment="Left" Height="220" Margin="337,10,0,0" VerticalAlignment="Top" Width="170" DisplayMemberPath="Name"/>
+        <ListBox x:Name="lvWorkers" HorizontalAlignment="Left" Height="220" Margin="337,10,0,0" VerticalAlignment="Top" Width="170" DisplayMemberPath="Name" />
         <Label Content="Add Worker" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top"/>
         <Label Content="Remove Worker" HorizontalAlignment="Left" Margin="0,104,0,0" VerticalAlignment="Top"/>
 
