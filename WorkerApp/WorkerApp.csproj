@@ -68,6 +68,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConverterForMultiBinding.cs" />
     <Compile Include="MyValidationRules.cs" />
     <Compile Include="Worker.cs" />
     <Page Include="MainWindow.xaml">

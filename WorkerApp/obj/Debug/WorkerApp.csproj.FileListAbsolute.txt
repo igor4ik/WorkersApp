@@ -13,3 +13,18 @@ c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\
 c:\users\igor4ik2\documents\visual studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp.pdb
 C:\Users\igor4ik2\Documents\Visual Studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\igor4ik2\Documents\Visual Studio 2012\Projects\WorkerApp\WorkerApp\obj\Debug\WorkerApp_MarkupCompile.lref
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\bin\Debug\WorkerApp.exe.config
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\bin\Debug\WorkerApp.exe
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\bin\Debug\WorkerApp.pdb
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\WorkerApp.csprojResolveAssemblyReference.cache
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\MainWindow.g.cs
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\App.g.cs
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\WorkerApp_MarkupCompile.cache
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\WorkerApp_MarkupCompile.lref
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\MainWindow.baml
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\WorkerApp.g.resources
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\WorkerApp.Properties.Resources.resources
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\WorkerApp.csproj.GenerateResource.Cache
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\WorkerApp.exe
+C:\Users\George\Documents\GitHub\WorkersApp\WorkerApp\obj\Debug\WorkerApp.pdb

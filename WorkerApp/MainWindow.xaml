@@ -2,12 +2,12 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525"
-        xmlns:src="clr-namespace:WorkerApp"
-        xmlns:validators="clr-namespace:WorkerApp"
+        xmlns:local="clr-namespace:WorkerApp"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <src:Worker x:Key="data"/>
+        <local:Worker x:Key="data"/>
+        <local:ConverterForMultiBinding x:Key="converterForMultiBinding"/>
         <Style x:Key="textBoxInError" TargetType="TextBox">
             <Style.Triggers>
                 <Trigger Property="Validation.HasError" Value="true">
@@ -35,7 +35,7 @@
                     UpdateSourceTrigger="PropertyChanged"
                     Mode="TwoWay">
                 <Binding.ValidationRules>
-                    <validators:MyValidationRules/>
+                        <local:MyValidationRules/>
                 </Binding.ValidationRules>
             </Binding>
         </TextBox.Text>
@@ -54,17 +54,20 @@
             TextWrapping="Wrap" 
             VerticalAlignment="Top" 
             Width="120">
-        <TextBox.Text>
-            <Binding               
-                Path="Remove"         
-                Source="{StaticResource data}"
-                ValidatesOnDataErrors="True"
-                UpdateSourceTrigger="PropertyChanged"
-                Mode="TwoWay">
-                <Binding.ValidationRules>
-                    <validators:MyValidationRules/>
-                </Binding.ValidationRules>
-            </Binding>
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource converterForMultiBinding}" UpdateSourceTrigger="PropertyChanged">
+                    <Binding ElementName="lvWorkers" Path="SelectedItem.Name" Mode="OneWay"/>
+                    <Binding               
+                        Path="Remove"         
+                        Source="{StaticResource data}"
+                        ValidatesOnDataErrors="True"
+                        UpdateSourceTrigger="PropertyChanged"
+                        Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <local:MyValidationRules/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </MultiBinding>
             </TextBox.Text>
         </TextBox>
         <Label 
