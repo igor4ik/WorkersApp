@@ -58,14 +58,6 @@ namespace WorkerApp
                     }
                 }
             }
-            else if ((txtRemoveName.Text).Equals(""))
-            {
-                MessageBox.Show("Worker not exist !", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            else//error message if list is empty
-            {
-                MessageBox.Show("Worker list is empty !", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
             if (flag && !(txtRemoveName.Text).Equals(""))//error message if worker name not exist in list of workers
             {
                 MessageBox.Show("Worker \"" + needToRemove.Name + "\" not exist !!!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -84,11 +76,6 @@ namespace WorkerApp
                     worker.RemoveAt(worker.Count - 1);
                 }
             }
-            else//error message if worker list empty
-            {
-                MessageBox.Show("Worker list is empty !", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-
         }
     }
 }

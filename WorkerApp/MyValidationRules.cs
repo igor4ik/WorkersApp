@@ -19,7 +19,7 @@ namespace WorkerApp
                 return new ValidationResult(false, "The value is not a valid Name");
             }
             else
-            {
+            { 
                 return new ValidationResult(true, null);
             }
         }
